@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-05T14:46:15 IST" name="Suite" finished-at="2023-04-05T14:47:49 IST" duration-ms="93374">
+    <groups>
+    </groups>
+    <test started-at="2023-04-05T14:46:15 IST" name="ChromeTest" finished-at="2023-04-05T14:47:05 IST" duration-ms="49499">
+      <class name="TestNgPackForLacoste.VerifyWelComePage">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNgPackForLacoste.VerifyWelComePage@57c758ac]" started-at="2023-04-05T14:46:18 IST" name="openBrowser" finished-at="2023-04-05T14:46:20 IST" duration-ms="1855" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:TestNgPackForLacoste.VerifyWelComePage@57c758ac]" started-at="2023-04-05T14:46:20 IST" name="OpenBrowser" finished-at="2023-04-05T14:46:20 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="GoTOWelComePage()[pri:0, instance:TestNgPackForLacoste.VerifyWelComePage@57c758ac]" started-at="2023-04-05T14:46:20 IST" name="GoTOWelComePage" finished-at="2023-04-05T14:46:55 IST" duration-ms="35221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoTOWelComePage -->
+        <test-method signature="VerifyForHerButtonOnWelComePage()[pri:0, instance:TestNgPackForLacoste.VerifyWelComePage@57c758ac]" started-at="2023-04-05T14:46:55 IST" name="VerifyForHerButtonOnWelComePage" finished-at="2023-04-05T14:46:58 IST" duration-ms="2868" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.lacoste.in/shop-by-category/clothing/sweatshirts/women-sweatshirt.html] but found [https://www.lacoste.in/shop-by-category/clothing/sweatshirt/women-sweatshirt.html]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.lacoste.in/shop-by-category/clothing/sweatshirts/women-sweatshirt.html] but found [https://www.lacoste.in/shop-by-category/clothing/sweatshirt/women-sweatshirt.html]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at TestNgPackForLacoste.VerifyWelComePage.VerifyForHerButtonOnWelComePage(VerifyWelComePage.java:75)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyForHerButtonOnWelComePage -->
+        <test-method is-config="true" signature="GoToMainPage(org.testng.ITestResult)[pri:0, instance:TestNgPackForLacoste.VerifyWelComePage@57c758ac]" started-at="2023-04-05T14:46:58 IST" name="GoToMainPage" finished-at="2023-04-05T14:46:58 IST" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyForHerButtonOnWelComePage status=FAILURE method=VerifyWelComePage.VerifyForHerButtonOnWelComePage()[pri:0, instance:TestNgPackForLacoste.VerifyWelComePage@57c758ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "this.BrowserName" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "this.BrowserName" is null
+at TestNgPackForLacoste.VerifyWelComePage.GoToMainPage(VerifyWelComePage.java:90)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToMainPage -->
+        <test-method is-config="true" signature="OpenMainPage()[pri:0, instance:TestNgPackForLacoste.VerifyWelComePage@57c758ac]" started-at="2023-04-05T14:46:58 IST" name="OpenMainPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680686218572" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenMainPage -->
+        <test-method is-config="true" signature="ClosedBrowser()[pri:0, instance:TestNgPackForLacoste.VerifyWelComePage@57c758ac]" started-at="2023-04-05T14:47:04 IST" name="ClosedBrowser" finished-at="2023-04-05T14:47:05 IST" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosedBrowser -->
+      </class> <!-- TestNgPackForLacoste.VerifyWelComePage -->
+      <class name="TestNgPackForLacoste.VerifyMainPage">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNgPackForLacoste.VerifyMainPage@63355449]" started-at="2023-04-05T14:46:15 IST" name="openBrowser" finished-at="2023-04-05T14:46:18 IST" duration-ms="2696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:TestNgPackForLacoste.VerifyMainPage@63355449]" started-at="2023-04-05T14:46:20 IST" name="OpenBrowser" finished-at="2023-04-05T14:46:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="GoToMainPage()[pri:0, instance:TestNgPackForLacoste.VerifyMainPage@63355449]" started-at="2023-04-05T14:46:20 IST" name="GoToMainPage" finished-at="2023-04-05T14:46:54 IST" duration-ms="34372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToMainPage -->
+        <test-method signature="VerifyTittlePresentOnTheMainPage()[pri:0, instance:TestNgPackForLacoste.VerifyMainPage@63355449]" started-at="2023-04-05T14:46:54 IST" name="VerifyTittlePresentOnTheMainPage" finished-at="2023-04-05T14:47:04 IST" duration-ms="9226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTittlePresentOnTheMainPage -->
+        <test-method is-config="true" signature="GoToAddToCartPage()[pri:0, instance:TestNgPackForLacoste.VerifyMainPage@63355449]" started-at="2023-04-05T14:47:04 IST" name="GoToAddToCartPage" finished-at="2023-04-05T14:47:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToAddToCartPage -->
+        <test-method is-config="true" signature="OpenAddToCartPage()[pri:0, instance:TestNgPackForLacoste.VerifyMainPage@63355449]" started-at="2023-04-05T14:47:04 IST" name="OpenAddToCartPage" finished-at="2023-04-05T14:47:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenAddToCartPage -->
+        <test-method is-config="true" signature="ClosedBrowser()[pri:0, instance:TestNgPackForLacoste.VerifyMainPage@63355449]" started-at="2023-04-05T14:47:04 IST" name="ClosedBrowser" finished-at="2023-04-05T14:47:04 IST" duration-ms="824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosedBrowser -->
+      </class> <!-- TestNgPackForLacoste.VerifyMainPage -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2023-04-05T14:47:05 IST" name="EdgeTest" finished-at="2023-04-05T14:47:49 IST" duration-ms="43761">
+      <class name="TestNgPackForLacoste.VerifyWelComePage">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNgPackForLacoste.VerifyWelComePage@72057ecf]" started-at="2023-04-05T14:47:07 IST" name="openBrowser" finished-at="2023-04-05T14:47:10 IST" duration-ms="3437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:TestNgPackForLacoste.VerifyWelComePage@72057ecf]" started-at="2023-04-05T14:47:10 IST" name="OpenBrowser" finished-at="2023-04-05T14:47:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="GoTOWelComePage()[pri:0, instance:TestNgPackForLacoste.VerifyWelComePage@72057ecf]" started-at="2023-04-05T14:47:10 IST" name="GoTOWelComePage" finished-at="2023-04-05T14:47:43 IST" duration-ms="33129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoTOWelComePage -->
+        <test-method signature="VerifyForHerButtonOnWelComePage()[pri:0, instance:TestNgPackForLacoste.VerifyWelComePage@72057ecf]" started-at="2023-04-05T14:47:43 IST" name="VerifyForHerButtonOnWelComePage" finished-at="2023-04-05T14:47:45 IST" duration-ms="2018" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.lacoste.in/shop-by-category/clothing/sweatshirts/women-sweatshirt.html] but found [https://www.lacoste.in/shop-by-category/clothing/sweatshirt/women-sweatshirt.html]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.lacoste.in/shop-by-category/clothing/sweatshirts/women-sweatshirt.html] but found [https://www.lacoste.in/shop-by-category/clothing/sweatshirt/women-sweatshirt.html]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at TestNgPackForLacoste.VerifyWelComePage.VerifyForHerButtonOnWelComePage(VerifyWelComePage.java:75)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyForHerButtonOnWelComePage -->
+        <test-method is-config="true" signature="GoToMainPage(org.testng.ITestResult)[pri:0, instance:TestNgPackForLacoste.VerifyWelComePage@72057ecf]" started-at="2023-04-05T14:47:45 IST" name="GoToMainPage" finished-at="2023-04-05T14:47:45 IST" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyForHerButtonOnWelComePage status=FAILURE method=VerifyWelComePage.VerifyForHerButtonOnWelComePage()[pri:0, instance:TestNgPackForLacoste.VerifyWelComePage@72057ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "this.BrowserName" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "this.BrowserName" is null
+at TestNgPackForLacoste.VerifyWelComePage.GoToMainPage(VerifyWelComePage.java:90)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToMainPage -->
+        <test-method is-config="true" signature="OpenMainPage()[pri:0, instance:TestNgPackForLacoste.VerifyWelComePage@72057ecf]" started-at="2023-04-05T14:47:45 IST" name="OpenMainPage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1680686265849" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenMainPage -->
+        <test-method is-config="true" signature="ClosedBrowser()[pri:0, instance:TestNgPackForLacoste.VerifyWelComePage@72057ecf]" started-at="2023-04-05T14:47:48 IST" name="ClosedBrowser" finished-at="2023-04-05T14:47:49 IST" duration-ms="457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosedBrowser -->
+      </class> <!-- TestNgPackForLacoste.VerifyWelComePage -->
+      <class name="TestNgPackForLacoste.VerifyMainPage">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNgPackForLacoste.VerifyMainPage@1afd44cb]" started-at="2023-04-05T14:47:05 IST" name="openBrowser" finished-at="2023-04-05T14:47:07 IST" duration-ms="1740" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:TestNgPackForLacoste.VerifyMainPage@1afd44cb]" started-at="2023-04-05T14:47:10 IST" name="OpenBrowser" finished-at="2023-04-05T14:47:10 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="GoToMainPage()[pri:0, instance:TestNgPackForLacoste.VerifyMainPage@1afd44cb]" started-at="2023-04-05T14:47:10 IST" name="GoToMainPage" finished-at="2023-04-05T14:47:45 IST" duration-ms="34521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToMainPage -->
+        <test-method signature="VerifyTittlePresentOnTheMainPage()[pri:0, instance:TestNgPackForLacoste.VerifyMainPage@1afd44cb]" started-at="2023-04-05T14:47:45 IST" name="VerifyTittlePresentOnTheMainPage" finished-at="2023-04-05T14:47:48 IST" duration-ms="3059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTittlePresentOnTheMainPage -->
+        <test-method is-config="true" signature="GoToAddToCartPage()[pri:0, instance:TestNgPackForLacoste.VerifyMainPage@1afd44cb]" started-at="2023-04-05T14:47:48 IST" name="GoToAddToCartPage" finished-at="2023-04-05T14:47:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToAddToCartPage -->
+        <test-method is-config="true" signature="OpenAddToCartPage()[pri:0, instance:TestNgPackForLacoste.VerifyMainPage@1afd44cb]" started-at="2023-04-05T14:47:48 IST" name="OpenAddToCartPage" finished-at="2023-04-05T14:47:48 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenAddToCartPage -->
+        <test-method is-config="true" signature="ClosedBrowser()[pri:0, instance:TestNgPackForLacoste.VerifyMainPage@1afd44cb]" started-at="2023-04-05T14:47:48 IST" name="ClosedBrowser" finished-at="2023-04-05T14:47:48 IST" duration-ms="484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosedBrowser -->
+      </class> <!-- TestNgPackForLacoste.VerifyMainPage -->
+    </test> <!-- EdgeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
